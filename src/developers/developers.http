@@ -1,0 +1,26 @@
+### List developers
+GET http://localhost:3000/developers
+
+### get developer
+GET http://localhost:3000/developers/1
+
+### create developer
+POST http://localhost:3000/developers
+Content-Type: application/json
+
+{
+    "name": "Vinicius Miguel",
+    "email": "viniciusmiguel@gmail.com",
+    "dateOfBirth": "2002-03-18"
+}
+
+### update developer
+PATCH http://localhost:3000/developers/dev_I1w9uB2t_vh-kMqdK5GC2
+Content-Type: application/json
+
+{
+    "email": "viniciusmiguel.dev@gmail.com"
+}
+
+### delete developer
+DELETE http://localhost:3000/developers/dev_I1w9uB2t_vh-kMqdK5GC2
